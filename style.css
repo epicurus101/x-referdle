@@ -12,7 +12,7 @@ body {
     height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -27,6 +27,6 @@ body {
     height: 58px;
     border-radius: 4px;
     border: none;
-    background-color: #818384;
+    background-color: #0e415a;
     margin: 4px;
 }
