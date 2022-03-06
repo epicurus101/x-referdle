@@ -22,4 +22,11 @@ body {
     border-bottom: solid 1px #3a3a3c;
 }
 
-
+.game-container button {
+    width: 43px;
+    height: 58px;
+    border-radius: 4px;
+    border: none;
+    background-color: #818384;
+    margin: 4px;
+}
