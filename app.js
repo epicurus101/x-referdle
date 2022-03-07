@@ -9,7 +9,7 @@ async function loadFileAndPrintToConsole(url) {
   }
   
 
-loadFileAndPrintToConsole('/wiki-100k.txt');
+loadFileAndPrintToConsole('https://epicurus101.github.io/x-referdle/wiki-100k.txt');
 
 
 
