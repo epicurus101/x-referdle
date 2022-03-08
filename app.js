@@ -1,15 +1,4 @@
-async function loadFileAndPrintToConsole(url) {
-    try {
-      const response = await fetch(url);
-      const data = await response.text();
-      console.log(data);
-    } catch (err) {
-      console.error(err);
-    }
-  }
-  
 
-loadFileAndPrintToConsole('https://epicurus101.github.io/x-referdle/wiki-100k.txt');
 
 
 
@@ -37,3 +26,21 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+fetch("https://epicurus101.github.io/x-referdle/shortWordList.json")
+.then(response => {
+   return response.json();
+})
+.then(jsondata => console.log(jsondata));
+
+async function loadFileAndPrintToConsole(url) {
+    try {
+      const response = await fetch(url);
+      const data = await response.text();
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  
+
+//loadFileAndPrintToConsole('https://epicurus101.github.io/x-referdle/wiki-100k.txt');
