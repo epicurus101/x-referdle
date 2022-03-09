@@ -7,7 +7,7 @@ let wordList = ["one", "two", "three", "four", ]
 
 
 const buttonElement = document.createElement('button')
-buttonElement.textContent = "hi friend!"
+buttonElement.textContent = "Hi friend! I generate random five letter words"
 buttonElement.setAttribute('id', "yolo")
 buttonElement.addEventListener('click', () => handleClick())
 gameContainer.appendChild(buttonElement)
