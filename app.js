@@ -26,21 +26,33 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-fetch("https://epicurus101.github.io/x-referdle/shortWordList.json")
-.then(response => {
-   return response.json();
-})
-.then(jsondata => console.log(jsondata));
-
-async function loadFileAndPrintToConsole(url) {
+fetch("https://epicurus101.github.io/x-referdle/shortWordList.json").then(async response => {
     try {
-      const response = await fetch(url);
-      const data = await response.text();
-      console.log(data);
-    } catch (err) {
-      console.error(err);
-    }
-  }
+     const data = await response.json()
+     console.log('response data?', data)
+   } catch(error) {
+     console.log('Error happened here!')
+     console.error(error)
+   }
+  })
+
+
+
+// fetch("https://epicurus101.github.io/x-referdle/shortWordList.json")
+// .then(response => {
+//    return response.json();
+// })
+// .then(jsondata => console.log(jsondata));
+
+// async function loadFileAndPrintToConsole(url) {
+//     try {
+//       const response = await fetch(url);
+//       const data = await response.text();
+//       console.log(data);
+//     } catch (err) {
+//       console.error(err);
+//     }
+//   }
   
 
 //loadFileAndPrintToConsole('https://epicurus101.github.io/x-referdle/wiki-100k.txt');
