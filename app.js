@@ -3,7 +3,7 @@
 
 
 const gameContainer = document.querySelector('.game-container')
-const wordList = ["one", "two", "three", "four", ]
+let wordList = ["one", "two", "three", "four", ]
 
 
 const buttonElement = document.createElement('button')
@@ -28,8 +28,8 @@ function getRandomInt(max) {
 
 fetch("https://epicurus101.github.io/x-referdle/shortWordList.json").then(async response => {
     try {
-     const data = await response.json()
-     console.log('response data?', data)
+     wordList = await response.json()
+     console.log('response data?', wordList)
    } catch(error) {
      console.log('Error happened here!')
      console.error(error)
