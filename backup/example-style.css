@@ -1,0 +1,23 @@
+* {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #121213;
+}
+
+.exp-container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%/2, max(200px, 100%/3)), 1fr));
+  }
+
+.exp-box {
+    text-align: center;
+    width: 200px;
+    height: 240px;
+    background-color: red;
+    border-radius: 5%;
+}
